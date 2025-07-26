@@ -29,6 +29,13 @@ cd ~/MagicMirror/modules
 git clone https://github.com/MMRIZE/MMM-LogExt
 ```
 
+## Update
+
+```sh
+cd ~/MagicMirror/modules/MMM-LogExt
+git pull
+```
+
 ## Configuration
 
 Put this module on top than other modules in config as far as possible.
