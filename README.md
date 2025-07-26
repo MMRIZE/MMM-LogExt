@@ -1,8 +1,7 @@
 # MMM-LogExt
 Log Extension module for MagicMirror
 
-![screenshot](https://raw.githubusercontent.com/MMRIZE/public_ext_storage/main/MMM-LogExt/MMM-LogExt.png)
-
+![screenshot](screenshot.png)
 
 ## Concept
 Many beginners have a problem tracing an unexpected issue when he/she runs the MagicMirror.
