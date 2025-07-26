@@ -118,4 +118,6 @@ curl -d '{"method":"info", "context":"HomeAssistant is activated."}' -H "Content
 - Seongnoh Yi (eouia0819@gmail.com)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y56IFLK)
 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
