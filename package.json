@@ -1,6 +1,6 @@
 {
   "name": "mmm-logext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for MagicMirror² to deliver the logs from frontend to backend and more features.",
   "main": "MMM-LogExt.js",
   "scripts": {
