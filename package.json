@@ -1,0 +1,24 @@
+{
+  "name": "mmm-logext",
+  "version": "1.0.0",
+  "description": "A module for MagicMirror² to deliver the logs from frontend to backend and more features.",
+  "main": "MMM-LogExt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMRIZE/MMM-LogExt.git"
+  },
+  "keywords": [
+    "Logging",
+    "Logs",
+    "Debug"
+  ],
+  "author": "MMRIZE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MMRIZE/MMM-LogExt/issues"
+  },
+  "homepage": "https://github.com/MMRIZE/MMM-LogExt#readme"
+}
