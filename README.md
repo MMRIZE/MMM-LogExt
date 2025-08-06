@@ -16,7 +16,7 @@ I know there already exists `MMM-Logging` to help with this issue, but it seems 
 - To deliver frontend log (used by MM's `Log` Object) to backend log
 - Customizable/Decorative Log messages
 - To monitor Notifications
-- `window.error` and `unhandledRejection` would be caught then transmit to the backend
+- `window.error` and `unhandledRejection` would be caught then transmitted to the backend
 - To be able to log external messages from other programs or devices via HTTP request
 
 > [!IMPORTANT]
@@ -63,7 +63,7 @@ Here are additional options to config
 
 ### decoration
 
-You can pour some sugar on original contenxt with `beforeContext` and `afterContext` callback function:
+You can pour some sugar on original context with `beforeContext` and `afterContext` callback function:
 
 - **`beforeContext({method, location, stack, context}) : String`**
 - **`afterContext({method, location, stack, context}) : String`**
@@ -83,7 +83,7 @@ afterContext: function (msg) {
 
 - method : which member method function of `Log` called. (`log`, `warn`, `error`, ...)
 - location : the location of `Log` called. (filename:lines:columns)
-- stack : If availabe, the caller stack array
+- stack : If available, the caller stack array
 - context : arguments of the `Log` call. (You don't need to include context in these function, because context itself will be inserted between these two return values automatically)
 
 If you don't need any decoration, just return `''` or `beforeContext: false` (or any value not function)
@@ -104,13 +104,13 @@ notificationMonitor: (notification, payload, senderName) => {
 // => 'CALENDAR_EVENTS' with events: 10
 ```
 
-Usually there would be too many notifications, so, you'd better to filter out specific notifications with `notification`, `payload`, `senderName` conditions to get proper target notification only.
+Usually there would be too many notifications, so it is better to filter out specific notifications with `notification`, `payload`, `senderName` conditions to get proper target notification only.
 
 ### replaceJSON (for expert)
 
-Logging is usually not regarded for inspection/watch the complex data value. This module generally deliver simplified data to backend log through `JSON.stringify()` So, `Function`, `Symbol` or `undefined` will not be transmitted to the backend. (It would be converted to `null` or equivalents.), and some complex-nested object might be also.
+Logging is usually not regarded for inspection/watch the complex data value. This module generally delivers simplified data to backend log through `JSON.stringify()` So, `Function`, `Symbol` or `undefined` will not be transmitted to the backend. (It would be converted to `null` or equivalents.), and some complex-nested object might be also.
 
-When you need more detailed information of those kinhds of values, you can use `replacer` of `JSON.stringify` to extend the features.
+When you need more detailed information of those kinds of values, you can use `replacer` of `JSON.stringify` to extend the features.
 
 **`replaceJSON(key, value) : Any`**
 
